@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Puddle {% block title %}{% endblock title %}</title>
+    <link
+      rel="shortcut icon"
+      href="{% static 'assets/favicon.ico' %}"
+      type="image/x-icon"
+    />
+    <!-- Tailwindcss -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="{% static 'css/base.css' %}" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <script src="{% static 'js/base.js' %}"></script>
+  </head>
+  <body>
+    {% include 'includes/navbar.html' %}
+    <div class="px-6 py-6">{% block content %} {% endblock content %}</div>
+    {% include 'includes/footer.html' %}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+  </body>
+</html>

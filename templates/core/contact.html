@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block title %}| Contact{% endblock title %}
+
+{% block content %}
+
+<h1 class="text-3xl mb-6 mx-4 font-bold">Contact Puddle</h1>
+<p class="lead mb-3 mx-4">
+    Have a question about the marketplace. Interested in contributing? Just want to say Hi!<br /> Use the contact form below to reach out to me. I will respond to you as soon as possible.
+  </p>
+  <form target="_blank" action="https://formspree.io/f/xgedbgrd" method="POST">
+    <div class="mb-4">
+      <div class="flex flex-wrap  g-3 items-center mb-2">
+        <div class="relative flex-grow max-w-full flex-1 px-4">
+          <input type="text" name="name" class="block appearance-none w-full py-1 px-2 mb-1 text-base leading-normal bg-white text-gray-800 border border-gray-200 rounded border border-3 border-gray-600" placeholder="Full Name" required>
+        </div>
+        <div class="relative flex-grow max-w-full flex-1 px-4">
+          <input type="email" name="email" class="block appearance-none w-full py-1 px-2 mb-1 text-base leading-normal bg-white text-gray-800 border border-gray-200 rounded border border-3 border-gray-600" placeholder="Email Address" required>
+        </div>
+      </div>
+    </div>
+    <input
+        name="subject"
+        type="hidden"
+        value="New submission from Excession Blog!"
+    />
+    <div class="mb-4 px-4">
+      <textarea placeholder="Your Message" class="block appearance-none w-full py-1 px-2 mb-1 text-base leading-normal bg-white text-gray-800 border border-gray-200 rounded border border-3 border-gray-600" name="message" rows="10" required></textarea>
+    </div>
+    <button type="submit" class="mx-4 py-4 px-8 bg-blue-500 hover:bg-blue-700 text-white font-bold rounded-xl">Send</button>
+  </form>
+</div>
+
+<script>
+    window.onbeforeunload = () => { for(const form of
+    document.getElementsByTagName('form')) { form.reset(); } }
+</script>
+
+{% endblock content %}
