@@ -92,6 +92,8 @@ This is a fun project and includes some very useful apps especially conversation
 
 You will need a recent version of Python installed on your OS (Windows/Mac/Linux), and the basic knowledge of how to setup and start a Django project. This was built with the most recent version of Django (5.0.2) to make it as current as possible. The only extra package that was installed is django-extensions.
 
+See `PROJECT_SETUP.md` for more detailed instructions.
+
 ### Prerequisites
 
 You should always create a virtual environment to keep you projects properly isolated from each other. To create a virtual environment you can install virtualenv globally or use venv.

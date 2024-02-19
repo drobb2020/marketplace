@@ -21,7 +21,7 @@
 - [ ] Add the packages that are necessary for production to the requirements.in in the same manner. My typical default packages are:
 
 ```sh
-    Django==4.2.8
+    Django==5.0.2
     django-extensions==3.2.3
     environs[django]
 ```
@@ -64,13 +64,13 @@
     README.md
 ```
 
-This list of files can grow or shrink depending on the projects need.
+This list of files can grow or shrink depending on the projects need. please see `SUPPORTING_FILES.md` for details on each of these files.
 
 ## settings.py setup
 
 ### INSTALLED_APPS
 
-- [ ] Now is the time to add the necessary INSTALLED_APPS into settings.py. One package that I always add to each project is django-extensions, this must be added to INSTALLED_APPS.
+- [ ] Now is the time to add the necessary INSTALLED_APPS into settings.py. One package that I always add to each project is django-extensions, this must be added to INSTALLED_APPS as "django_extensions",.
 
 ### TEMPLATES
 
@@ -507,5 +507,5 @@ These settings will enable allauth to enhance the existing authentication system
     {% endblock content %}
 ```
 
-[product-screenshot]: ./static/assets/djadmin.png
-[product-screenshot2]: ./static/assets/djadmin2.png
+[product-screenshot]: static/assets/djadmin.png
+[product-screenshot2]: static/assets/djadmin2.png
