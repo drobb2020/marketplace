@@ -30,7 +30,7 @@ pip-upgrader==1.4.15
     # via -r requirements-dev.in
 platformdirs==4.2.0
     # via black
-requests==2.31.0
+requests==2.32.0
     # via pip-upgrader
 ruff==0.2.2
     # via -r requirements-dev.in
