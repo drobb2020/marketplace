@@ -4,37 +4,17 @@
 #
 #    pip-compile requirements-dev.in
 #
-black==24.2.0
+black==24.4.2
     # via -r requirements-dev.in
-certifi==2024.2.2
-    # via requests
-charset-normalizer==3.3.2
-    # via requests
 click==8.1.7
     # via black
-colorclass==2.2.2
-    # via pip-upgrader
-docopt==0.6.2
-    # via pip-upgrader
-idna==3.7
-    # via requests
 mypy-extensions==1.0.0
     # via black
 packaging==23.2
-    # via
-    #   black
-    #   pip-upgrader
+    # via black
 pathspec==0.12.1
     # via black
-pip-upgrader==1.4.15
-    # via -r requirements-dev.in
 platformdirs==4.2.0
     # via black
-requests==2.32.0
-    # via pip-upgrader
-ruff==0.2.2
+ruff==0.4.8
     # via -r requirements-dev.in
-terminaltables==3.1.10
-    # via pip-upgrader
-urllib3==2.2.1
-    # via requests

@@ -10,7 +10,7 @@ dj-database-url==2.1.0
     # via environs
 dj-email-url==1.0.6
     # via environs
-django==5.0.2
+django==5.0.6
     # via
     #   -r requirements.in
     #   dj-database-url
@@ -19,13 +19,15 @@ django-cache-url==3.4.5
     # via environs
 django-extensions==3.2.3
     # via -r requirements.in
-environs[django]==10.3.0
-    # via -r requirements.in
+environs[django]==11.0.0
+    # via
+    #   -r requirements.in
+    #   environs
 marshmallow==3.20.2
     # via environs
 packaging==23.2
     # via marshmallow
-pillow==10.2.0
+pillow==10.3.0
     # via -r requirements.in
 python-dotenv==1.0.1
     # via environs
