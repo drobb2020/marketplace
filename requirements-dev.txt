@@ -18,3 +18,4 @@ platformdirs==4.2.0
     # via black
 ruff==0.4.8
     # via -r requirements-dev.in
+zipp>=3.19.1 # not directly required, pinned by Snyk to avoid a vulnerability
